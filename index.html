@@ -9,34 +9,34 @@
 <body>
     <!-- navigation section -->
      <section>
-        <div">
-            <div class=" relative w-full h-[800px]">
+        <div>
+            <div class=" relative w-full h-screen">
             <img src="images/first image photo of plate.png" alt="" class="w-full h-full object-cover">
-
             <div class="absolute inset-0 bg-black/20"></div>
             </div>
 
-                <div class=" fixed z-50 top-0 left-0 pb-[50px] w-full h-[50px] pt-[30px] flex gap-[50px] font-bold items-center justify-center bg-black/20">
-                    <button class="text-yellow-400 text-[15px] pt-[35px] hover:text-white hover:underline underline-offset-8 ">Home</button>
+                <div class=" hidden md:flex fixed z-50 top-0 left-0 pt-10 pb-4 w-full h-[80px] pt-[30px] flex gap-8 font-bold items-center justify-center bg-black/20">
+
+                    <button class="text-yellow-400 text-[15px] hover:text-white hover:underline underline-offset-8 ">Home</button>
                     <div class="relative group">
-                        <button class="text-[white] text-[15px] pt-[35px] hover:underline underline-offset-8 ">MENUS</button>
+                        <button class="text-[white] text-[15px] hover:underline underline-offset-8 ">MENUS</button>
 
                         <!-- drop down button -->
-                         <div class=" absolute w-[200px] top-[55px] left-[-70px] group-hover:block bg-black hidden group-hover:flex flex-col">
-                            <button class="text-white px-5 py-3 text-[10px] hover:underline underline-offset-8">Café Menu</button>
+                         <div class=" absolute top-full left-0 bg-black hidden group-hover:flex flex-col">
+                            <button class="text-white px-5 py-3 text-[10px] text-left whitespace-nowrap hover:underline underline-offset-8">Café Menu</button>
 
-                            <button class="text-white px-5 py-3 text-[10px] hover:underline underline-offset-8">Dinner Menu</button>
+                            <button class="text-white px-5 py-3 text-[10px] text-left whitespace-nowrap hover:underlin underline-offset-8">Dinner Menu</button>
 
-                            <button class="text-white px-5 py-3 text-[10px] hover:underline underline-offset-8">Beverage Menu</button>
+                            <button class="text-white px-5 py-3 text-[10px] text-left whitespace-nowrap hover:underline underline-offset-8">Beverage Menu</button>
 
-                            <button class="text-white px-5 py-3 text-[10px] hover:underline underline-offset-8">Takeout Menu</button>
+                            <button class="text-white px-5 py-3 text-[10px] text-left whitespace-nowrap hover:underline underline-offset-8">Takeout Menu</button>
                          </div>
                     </div>
-                    <button class="text-[white] text-[15px] pt-[35px] hover:underline underline-offset-8 ">RESERVATIONS</button>
-                     <button class=" mt-[-20px] w-[70px] h-[50px] pt-[20px] hover:underline underline-offset-8"><img src="images/white color logo.avif" alt=""></button>
+                    <button class="text-[white] text-[15px] hover:underline underline-offset-8 ">RESERVATIONS</button>
+                     <button class="w-[70px]"><img src="images/white color logo.avif" alt=""></button>
                     
                     <div class="relative group">
-                        <button class="text-[white] text-[15px] pt-[35px] hover:underline underline-offset-8 ">Online Store
+                        <button class="text-[white] text-[15px] hover:underline underline-offset-8 ">Online Store
 </button>
 
                         <!-- drop down button -->
@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="relative group">
-                        <button class="text-[white] text-[15px] pt-[35px] hover:underline underline-offset-8 ">ABOUT</button>
+                        <button class="text-[white] text-[15px] hover:underline underline-offset-8 ">ABOUT</button>
 
                         <!-- drop down button -->
                          <div class=" absolute w-[200px] top-[55px] left-[-70px] group-hover:block bg-black hidden group-hover:flex flex-col">
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="relative group">
-                        <button class="text-[white] text-[15px] pt-[35px] hover:underline underline-offset-8 ">CONTACT</button>
+                        <button class="text-[white] text-[15px] hover:underline underline-offset-8 ">CONTACT</button>
 
                         <!-- drop down button -->
                          <div class=" absolute w-[200px] top-[55px] left-[-70px] group-hover:block bg-black hidden group-hover:flex flex-col">
@@ -76,16 +76,130 @@
                     </div>
                 </div>
 
-                <div>
-                    <img class=" relative mt-[-650px] px-[300px] py-[100px] w-full" src="images/66fdd3f600531c8c342b01e9_ohc-full-p-1080.png" alt="">
+                <!-- Mobile nevbar -->
+                 <div class="flex md:hidden fixed z-50 top-0 left-0 w-full px-5 py-3 items-center justify-between bg-black/20">
 
-                    <div class="relative flex justify-center mt-[-100px] gap-[20px]">
-                        <button class="relative border border-white w-[200px] h-[50px] bg-white font-bold text-[13px] hover:rounded-tr-[20px] hover:rounded-bl-[20px] ">Make A RESERVATION</button>
+                    <!-- logo -->
+                     <button class="w-[55px]"><img src="images/white color logo.avif" alt=""></button>
 
-                        <button class="relative border border-white w-[200px] h-[50px] bg-trasparent font-bold text-[13px] hover:rounded-tr-[20px] hover:rounded-bl-[20px] text-[white] ">Make A RESERVATION</button>
+                     <button class="text-white text-[30px]">☰</button>
+                 </div>
+
+                <div class=" absolute inset-0 flex flex-col items-center justify-center gap-6 px-6 md:px-16 ">
+                    <img src="images/66fdd3f600531c8c342b01e9_ohc-full-p-1080.png" alt="" class="w-full max-w-[280px] sm:max-w-md:max-w-xl lg:max-w-3xl h-auto">
+
+                    <div class=" flex flex-col sm:flex-row items-center gap-4 ">
+                        <button class=" border border-white bg-white font-bold tex-[13px] px-6 py-3 hover:rounded-tr-[20px] hover:rounded-bl-[20px]">Make A RESERVATION</button>
+
+                        <button class=" border border-white bg-white font-bold text-[13px] px-6 py-3 hover:rounded-tr-[20px] hover:rounded-bl-[20px] ">ONLINE ORDER</button>
                     </div>
                 </div>
         </div>
+     </section>
+
+     <section>
+        <div class="w-full px-5 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:py-20">
+
+            <!-- Main content -->
+             <div class="mx-auto max-w-[1000px] text-center">
+
+                <!-- Heading -->
+                 <h2 class="text-[28px] leading-tight front-bold sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold">Care for People. Care for the Earth</h2>
+
+                 <!-- Welcome -->
+                  <p class="mt-8 text-[16px] leading-7 sm:text-[17px] md:text-[18px]">
+                    <span class="font-bold">
+                        Welcome to Oak Hill Cafe!
+                    </span>
+                    <br>
+                    We are a unique combination of restaurant and farm all in 2.4 acres
+                    located just north of downtown Greenville, SC.
+                  </p>
+
+                  <!-- Cafe -->
+                   <p class="mt-6 text-[16px] leading-7 sm:text-[17px] md:text-[18px]">
+                    <span class="font-bold">Café</span>
+                    <span>• Thursday – Sunday • 10am – 3pm</span>
+                   </p>
+
+                   <!-- Dinner -->
+                    <p class="mt-2 text-[16px] leading-7 sm:text-[17px] md:text-[18px]">
+                        <span class="font-bold">Dinner</span>
+                        <span>• Wednesday – Saturday • 5pm – 9pm</span>
+                    </p>
+
+                    <!-- Farmers Tap -->
+                     <p class="mt-6 text-[16px] leading-7 sm:text-[17px] md:text-[18px]">
+                        <span class="font-bold">The Farmers Tap</span>
+                        <span>is</span>
+                        <span class="font-bold">OPEN!</span>
+                     </p>
+             </div>
+        </div>
+     </section>
+
+     <section class="w-full px4 md:px-8 lg:px-12 py-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-5">
+            <!-- first image -->
+             <div class="relative overflow-hidden group md:col-span-2 cursor-pointer">
+                <img src="images/photo 5.avif" class="w-full h-48 md:h-56 lg:h-64 object-cover md:col-span-2 transform group-hover:scale-105 transition-transform duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-all duration-300"></div>
+             </div>
+            
+            <!-- second image -->
+            <div class="relative overflow-hidden group cursor-pointer">
+                <img src="images/photo 3.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-all duration-300"></div>
+            </div>
+            
+            <!-- third image -->
+             <div class="relative overflow-hidden group cursor-pointer">
+                <img src="images/photo 2.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-transform duration-300"></div>
+             </div>
+            
+            <!-- fourth image -->
+             <div class="relative overflow-hidden group cursor-pointer">
+                <img src="images/photo 6.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover transform group-hover:scale-105 duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-transform duration-300"></div>
+             </div>
+            
+            <!-- fiveth image -->
+             <div class="relative overflow-hidden group cursor-pointer">
+                <img src="images/photo 1.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover transform group-hover:scale-105 duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-transform duration-300"></div>
+             </div>
+            
+            <!-- sixth image -->
+             <div class="relative overflow-hidden group cursor-pointer">
+                <img src="images/photo 7.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-transform duration-300"></div>
+             </div>
+            
+            <!-- seventh image -->
+             <div class="relative overflow-hidden group md:col-span-2 cursor-pointer">
+                <img src="images/photo 4.avif" alt="" class="w-full h-48 md:h-56 lg:h-64 object-cover md:col-span-2 transform group-hover:scale-105 transition-transform duration-300">
+
+                <div class="absolute inset-0 bg-white/0 group-hover:bg-white/30 transition-transform duration-300"></div>
+             </div>
+        </div>
+     </section>
+
+     <section class="w-full px-4 md:px-8 lg:px-12 py-20">
+            <div class="relative max-w-6xl mx-auto">
+                <img src="images/photo 8.avif" alt="" class="w-full md:w-[700px] h-64 md:h-[450px] object-cover">
+
+                <div class="bg-white p-6 shadow-md md:w-[500px] md:absolute md:top-24 md:left-[550px]">
+                    <h2 class="text-2xl font-serif mb-4">We Are James Beard Semi-Finalists!</h2>
+                    <p class="text-grey-600 leading-7">We are so excited to be a James Beard Foundation semi-finalist for 2020 Best New Restaurant. Congrats to all our dedicated staff and amazing customers that made this nomination possible.</p>
+                </div>
+            </div>
      </section>
 </body>
 </html>
